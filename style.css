@@ -4,7 +4,6 @@ body {
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans","sans-serif";;
   letter-spacing: 1px;
   color: #232323;
-  line-height: 1.4;
 }
 
 img {
@@ -543,7 +542,7 @@ FAQ
   box-shadow: 0 10px 25px 0 #00000029;
   border-radius: 2px;
   background-color: #fff;
-  width: 47%;
+  width: 43%;
   min-width: 260px;
   margin: 10px auto;
   padding: 20px;
