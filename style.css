@@ -4,7 +4,8 @@ body {
   font-family: "ヒラギノ角ゴシック", "Hiragino Sans","sans-serif";;
   letter-spacing: 1px;
   color: #232323;
-  line-height: 0.4;
+  line-height: 1.4;
+  background-color: #f7f7f7;
 }
 
 img {
@@ -84,7 +85,7 @@ top
 =======================*/
 
 .top {
-  background: url(hero-bg.jpg) no-repeat center center/cover;
+  background: url(../img/hero-bg.jpg) no-repeat center center/cover;
   /* image必要なし、 center center で上下左右の中心に、 /cover でbg-size coverの役割*/
   height: 100vh;
   /* position: relative;  ←absoluteを指定する場所*/
@@ -274,7 +275,7 @@ media
 #media {
   height: 100%;
   background-color: #f7f7f7;
-  padding: 50px 0 140px 15%;
+  padding: 50px 0 140px 10%;
 }
 
 .swiper-container {
@@ -321,7 +322,7 @@ media
 
 
 .swiper-slide {
-  margin-right: 50px;
+  margin-right: 50px !important;
   position: relative;
   z-index: 100;
 }
@@ -329,7 +330,7 @@ media
 
 
 .swiper-slide img {
-  width: 344px;
+  width: 100%;
 }
 
 
@@ -475,15 +476,20 @@ customer voice
 =======================*/
 
 #voice {
-  background-size: 100% auto;
-  background-image: url(cv-bg.png);
+  background-image: url(../img/cv-bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 551px;
   background-color: #f7f7f7;
-  padding: 100px 0;
+  padding: 130px 0;
+  margin-bottom: 160px;
 }
 
+
+
 .voice-wrapper {
-  padding-top: 75px;
+  padding-top: 150px;
   color: #232323;
   display: flex;
   justify-content: space-between;
@@ -493,7 +499,8 @@ customer voice
   background-color: #fff;
   padding-top: 60px;
   position: relative;
-  margin: 0 5px;
+  margin: 0 10px;
+  min-width: 200px;
 }
 
 .voice-item img {
@@ -517,20 +524,23 @@ FAQ
 =======================*/
 
 #question {
-  padding: 0 15%;
-  background-color: #f7f7f7;
   position: relative;
+}
+
+.big-wrapper {
+  padding: 0 15%;
 }
 
 .question-position img {
   width: 65%;
+  height: 555px;
+  max-width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .question-title {
   padding: 50px 0;
+  z-index: 100;
 }
 
 .question-wrapper {
@@ -543,7 +553,7 @@ FAQ
   box-shadow: 0 10px 25px 0 #00000029;
   border-radius: 2px;
   background-color: #fff;
-  width: 43%;
+  width: 47%;
   min-width: 260px;
   margin: 10px auto;
   padding: 20px;
@@ -580,6 +590,7 @@ access
 =======================*/
 
 #access {
+  margin-top: 100px;
   background-color:  #f7f7f7;
 }
 
@@ -875,8 +886,25 @@ news
   =========================*/
 
   #media {
-    padding: 50px 0 140px 10%;
+    padding: 50px 0 140px 5%;
   }
+
+  
+  .swiper-wrapper {
+    padding: 10% 0 0 0;
+    margin: 5% 0 0;
+  }
+  
+  
+  
+  .swiper-slide {
+    width: 100%;
+    margin-right: 0px !important;
+  }
+  
+  
+  
+  
 
 
 
@@ -910,27 +938,33 @@ news
   
   .price-wrapper {
     margin: 50px 0;
-    display: unset;
+  }
+
+  .scroll {
+    overflow: scroll;
   }
   
   
   .price-item {
     background-color: #fff;
-    margin: 40px auto;
+    margin: 40px 20px;
     min-width: 250px;
+    
   }
   
 
    /*=========================
   voice
   =========================*/
-  .voice-wrapper {
-    display: unset;
-  }
   
+  .voice-wrapper {
+    padding-top: 50px;
+  }
+
   .voice-item {
-    margin: 70px auto;
+    margin: 70px 20px;
     min-width: 260px;
+    
   }
   
 
@@ -938,15 +972,17 @@ news
   FAQ
   =========================*/
 
-  #question {
+ 
+  .big-wrapper {
     padding: 0 5%;
-    background-color: #f7f7f7;
-    position: relative;
   }
   
   .question-position img {
     height: 100%;
+    width: auto;
+    top: 150px;
   }
+  
 
   
   .question-content {
@@ -958,6 +994,10 @@ news
 /*=======================
 access
 =======================*/
+
+#access {
+  margin-top: 150px;
+}
 
 .adrress2 {
   display: unset;
@@ -992,3 +1032,5 @@ footer
 
 
 }
+
+
