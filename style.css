@@ -85,7 +85,7 @@ top
 =======================*/
 
 .top {
-  background: url(../img/hero-bg.jpg) no-repeat center center/cover;
+  background: url(hero-bg.jpg) no-repeat center center/cover;
   /* image必要なし、 center center で上下左右の中心に、 /cover でbg-size coverの役割*/
   height: 100vh;
   /* position: relative;  ←absoluteを指定する場所*/
@@ -476,7 +476,7 @@ customer voice
 =======================*/
 
 #voice {
-  background-image: url(../img/cv-bg.png);
+  background-image: url(cv-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
