@@ -66,7 +66,6 @@ header
 
 .header-nav-item {
   margin-left: 20px;
-  list-style: none;
   color: #fff;
   transition: all 0.3s ease 0s;
 }
@@ -285,6 +284,18 @@ media
   position: relative;
 }
 
+@media only screen and (min-width:415px) {
+  .swiper-container {
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width:690px) {
+  .swiper-container {
+    height: 520px;
+  }
+}
+
 .swiper-wrapper {
   padding: 5% 0;
   margin: 5% 0 0;
@@ -343,6 +354,33 @@ media
 
 .nav-btn img {
   width: 45px;
+}
+
+@media only screen and (max-width:414px) {
+  .nav-btn {
+    position: absolute;
+    left: 170px;
+    bottom: 60px;
+    width: 130px;
+  }
+}
+
+@media only screen and (min-width:415px) {
+  .nav-btn {
+    position: absolute;
+    left: 260px;
+    bottom: 80px;
+    width: 130px;
+  }
+}
+
+@media only screen and (min-width:690px) {
+  .nav-btn {
+    position: absolute;
+    left: 210px;
+    bottom: 80px;
+    width: 130px;
+  }
 }
 
 
@@ -469,6 +507,9 @@ price
 .dot::before {
   content: "・";
 }
+
+
+
 
 
 /*=======================
@@ -842,6 +883,7 @@ header
     cursor: pointer;
     position: fixed;
   }
+  
   /* 表示された時用のCSS */
   .nav_open #header #navi {
     top: 100px;
@@ -938,16 +980,16 @@ news
   
   .price-wrapper {
     margin: 50px 0;
+    display: block;
   }
-
+  
   .scroll {
     overflow: scroll;
   }
   
-  
   .price-item {
     background-color: #fff;
-    margin: 40px 20px;
+    margin: 40px auto;
     min-width: 250px;
     
   }
@@ -956,6 +998,10 @@ news
    /*=========================
   voice
   =========================*/
+
+  #voice {
+    margin-bottom: 80px;
+  }
   
   .voice-wrapper {
     padding-top: 50px;
